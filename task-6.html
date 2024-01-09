@@ -10,10 +10,14 @@
   <body>
     <p><a href="index.html">Go back</a></p>
 
-    <div class="btn" id="controls">
-      <input type="number" min="1" max="100" step="1" />
-      <button type="button" data-create>Create</button>
-      <button type="button" data-destroy>Destroy</button>
+    <div class="button" id="controls">
+      <input class="int" type="number" min="1" max="100" step="1" />
+      <button class="btn btn-create" type="button" data-create>
+        <span class="span">Create</span>
+      </button>
+      <button class="btn btn-destroy" type="button" data-destroy>
+        <span class="span">Destroy</span>
+      </button>
     </div>
 
     <div id="boxes"></div>
