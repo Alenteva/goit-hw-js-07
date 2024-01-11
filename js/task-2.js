@@ -31,16 +31,5 @@ const image = images
       `<li class="img-item"><img src="${img.url}" width="360px" height="300" alt="${img.alt}"/></li>`
   )
   .join("");
-// додаємо до списку в HTML
 list.insertAdjacentHTML("beforeend", image);
 console.log(image);
-
-// Ще один спосіб створення і додавання
-// images.forEach((img) => {
-//   const image = document.createElement("img");
-//   image.src = img.url;
-//   image.alt = img.alt;
-//   const list = document.querySelector(".gallery");
-//   list.append(image);
-//   console.log(image);
-// });

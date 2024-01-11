@@ -16,7 +16,7 @@ body {
 ul {
   list-style: none;
 }
-.list {
+#categories {
   display: inline-flex;
   padding: 24px;
   flex-direction: column;
@@ -33,7 +33,7 @@ ul {
   border-radius: 8px;
   background: #f6f6fe;
 }
-.ctgs-name {
+.item > h2 {
   color: #2e2f42;
   font-family: Montserrat;
   font-size: 24px;
@@ -44,11 +44,11 @@ ul {
   margin-top: 8px;
   margin-bottom: 8px;
 }
-.ctgs {
+.item > ul {
   padding: 0;
   margin-top: 0;
 }
-.list-item {
+.item > ul > li {
   width: 360px;
   height: 40px;
   flex-shrink: 0;

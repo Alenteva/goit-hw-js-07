@@ -1,12 +1,19 @@
+// const element = document.getElementById("categories");
+// const categories = element.querySelectorAll(".item");
+
+// console.log(`Numder of categories ${categories.length}`);
+// categories.forEach((item) => {
+//   const categoryTitle = item.querySelector(".ctgs-name").textContent;
+//   const categoryItems = item.querySelectorAll(".list-item");
+//   console.log(`Category ${categoryTitle} Elements ${categoryItems.length}`);
+// });
+
 const element = document.getElementById("categories");
 const categories = element.querySelectorAll(".item");
 
-// Порахувати кількість категорій та вивести в консоль
-console.log(`Namder of categories ${categories.length}`);
-
-// Для кожної категорії вивести заголовок та кількість елементів у категорії
+console.log(`Numder of categories ${categories.length}`);
 categories.forEach((item) => {
-  const categoryTitle = item.querySelector(".ctgs-name").textContent;
-  const categoryItems = item.querySelectorAll(".list-item");
+  const categoryTitle = item.querySelector("h2").textContent;
+  const categoryItems = item.querySelectorAll("li");
   console.log(`Category ${categoryTitle} Elements ${categoryItems.length}`);
 });
